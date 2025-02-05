@@ -5,16 +5,22 @@
     text-decoration: none;
     outline: none;
     font-weight: 400;
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
+.poppins-thin {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
 :root{
-    --cor1:rgb(23, 20, 23);
-    --cor2:rgb(26, 18, 35);
+    --cor1: #efefdc;
+    --cor2: #6c2f4c;
     --cor3:rgb(255, 255, 255);
     --cor4: #44355B;
-    --cor5: #ECA72C;
-    --cor6: #EE5622;
+    --cor5: #f98774;
+    --cor6: #a1607d;
 }
 
 html{
@@ -24,24 +30,22 @@ html{
 
 body {
     background: var(--cor1);
-    color: var(--cor3);
-    font-family: 'Lora', serif;
+    color: var(--cor4);
 }
 
 h1{
     color: var(--cor3);
-    font-size: 2rem;
+    font-size: 40px;
     font-weight: 700;
-    font-family: 'Playfair Display', serif;
+    font-family: "Lora", serif;
 }
 
 h2{
     padding: 1rem;
-    color: var(--cor3);
+    color: var(--cor4);
     font-size: 1.5rem;
     font-weight: 600;
     text-align: left;
-    font-family: 'Playfair Display', serif;
 }
 
 h3{
@@ -50,7 +54,6 @@ h3{
     font-size: 1.25rem;
     /*font-family: 'Lora', serif;*/
     text-align: center;
-    font-family: 'Lora', serif;
 }
 
 p{
@@ -58,7 +61,6 @@ p{
     line-height: 1.5rem;
     text-align: justify;
     padding: 0.5rem 0;
-    font-family: 'Lora', serif;
 }
 
 /* Definindo as configurações do Flexbox */
@@ -105,11 +107,19 @@ p{
     flex-direction: column;
     margin: 2rem auto;
     width: 90%;
-    background-color: rgba(242, 208, 140, 0.22);
-    backdrop-filter: blur(8px);
+ }
+
+#sobre_texto{
+    flex-direction: column;
+    margin: 2rem auto;
+    width: 100%;
+    /*background-color: var(--cor2);
     border-radius: 10px;
-    padding: 2rem;
-    max-height: 800px;
+    z-index: 1;
+    height: 160px;
+    transform: translateY(5%);
+    padding: 5px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);*/
  }
 
  #conteudo{
@@ -120,6 +130,8 @@ p{
  .img_profile{
     width:200px;
     border-radius: 16px;
+    z-index: 2;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
  }
 
  #video{
@@ -130,13 +142,15 @@ p{
     width: 90%;
  }
 
+
  #video h2 {
     text-align: left; /* Alinha o título à esquerda */
-    color: var(--cor3); /* Cor do título */
+    color: var(--cor4); /* Cor do título */
     font-size: 1.5rem;
     margin-bottom: 1rem;
     width: 100%; /* Garante que o título ocupe a largura toda */
 }
+
 
  footer{
     flex-direction: column;
@@ -169,14 +183,7 @@ p{
 }
 
 .social_icon:hover {  
-    filter: brightness(0) 
-    saturate(100%) 
-    invert(63%) 
-    sepia(79%) 
-    saturate(411%) 
-    hue-rotate(358deg) 
-    brightness(94%) 
-    contrast(98%);
+    filter: brightness(0) saturate(100%) invert(61%) sepia(9%) saturate(2535%) hue-rotate(320deg) brightness(101%) contrast(95%)
 }
 
 #contact{
@@ -204,10 +211,11 @@ form input,
 textarea {
     margin: 0.5rem 0 1rem;
     padding: 0.5rem;
-    border-radius: 1.25rem;
+    border-radius: 8px;
     border: none;
     width: 100%;
     font-size: 1rem;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 textarea {
@@ -231,10 +239,11 @@ form button {
     border-radius: 0.75rem;
     font-weight: 700;
     font-size: 1rem;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 form button:hover {
-    background: var(--cor5);
+    background: var(--cor6);
 }
 
 #mapa{
