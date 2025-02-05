@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+:root{
+    --cor1:rgb(23, 20, 23);
+    --cor2:rgb(26, 18, 35);
+    --cor3:rgb(255, 255, 255);
+    --cor4: #44355B;
+    --cor5: #ECA72C;
+    --cor6: #EE5622;
+}
+
+html{
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    background: var(--cor1);
+    color: var(--cor3);
+    font-family: 'Lora', serif;
+}
+
+h1{
+    color: var(--cor3);
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+}
+
+h2{
+    padding: 1rem;
+    color: var(--cor3);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+}
+
+h3{
+    padding: 1rem;
+    color: var(--cor3);
+    font-size: 1.25rem;
+    /*font-family: 'Lora', serif;*/
+    text-align: center;
+    font-family: 'Lora', serif;
+}
+
+p{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-align: justify;
+    padding: 0.5rem 0;
+    font-family: 'Lora', serif;
+}
+
+/* Definindo as configurações do Flexbox */
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex_start {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#header_content{
+    height: 80px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 24px;
+    background-color: var(--cor2);
+    border-bottom: 1px solid var(--cor2);
+}
+
+#menu li {
+    display: inline;
+    padding: 1rem;
+ }
+ 
+ #menu li a {
+    text-decoration: none;
+    color: var(--cor3);
+    font-size: 20px;
+ }
+ 
+ #menu li a:hover {
+    color: var(--cor5);
+    text-decoration: underline;
+ }
+
+ #about{
+    flex-direction: column;
+    margin: 2rem auto;
+    width: 90%;
+    background-color: rgba(242, 208, 140, 0.22);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    padding: 2rem;
+    max-height: 800px;
+ }
+
+ #conteudo{
+    flex-direction: row;
+    gap: 2rem;
+ }
+
+ .img_profile{
+    width:200px;
+    border-radius: 16px;
+ }
+
+ #video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto;
+    width: 90%;
+ }
+
+ #video h2 {
+    text-align: left; /* Alinha o título à esquerda */
+    color: var(--cor3); /* Cor do título */
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    width: 100%; /* Garante que o título ocupe a largura toda */
+}
+
+ footer{
+    flex-direction: column;
+    margin: 0;
+    padding: 2rem;
+    color: var(--cor3);
+    background-color: var(--cor2);
+    font-weight: bold;
+    text-align: center;
+ }
+
+ #redes_sociais {
+    display: flex;
+    justify-content: space-evenly; 
+    margin: 1rem 0 0 0;
+    width: 320px;
+}
+
+.social_icon {
+    width: 4rem;
+    height: 4rem;
+    filter: brightness(0) 
+    saturate(100%) 
+    invert(100%) 
+    sepia(0%) 
+    saturate(7500%) 
+    hue-rotate(185deg) 
+    brightness(102%) 
+    contrast(103%);
+}
+
+.social_icon:hover {  
+    filter: brightness(0) 
+    saturate(100%) 
+    invert(63%) 
+    sepia(79%) 
+    saturate(411%) 
+    hue-rotate(358deg) 
+    brightness(94%) 
+    contrast(98%);
+}
+
+#contact{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    border: none;
+}
+
+form label {
+    font-size: 1rem;
+    text-align: left;
+    font-weight: 500;
+}
+
+form input,
+textarea {
+    margin: 0.5rem 0 1rem;
+    padding: 0.5rem;
+    border-radius: 1.25rem;
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: none;
+    height: 5rem;
+}
+
+form span{
+    margin: 0 0 0.5rem 0.75rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: red;
+}
+
+form button {
+    text-align: center;
+    padding: 0.75rem 2rem;
+    background: var(--cor2);
+    border: 1px solid var(--cor3);
+    color: var(--cor3);
+    border-radius: 0.75rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+form button:hover {
+    background: var(--cor5);
+}
+
+#mapa{
+    width: 480px;
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+#endereco > p{
+    font-size: 1rem;
+    text-align: justify;
+    font-weight: 600;
+}
